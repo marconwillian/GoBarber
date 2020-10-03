@@ -1,0 +1,11 @@
+@baseUrl = http://localhost:3333
+
+
+# @name Create_Session
+post {{baseUrl}}/sessions/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "marconc@mh4sh.dev",
+    "password": "12345"
+}

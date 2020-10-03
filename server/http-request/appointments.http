@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:3333
+@tokenAuth = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFyY29uIiwiaWF0IjoxNTk5NDc2MzA2LCJleHAiOjE1OTk1NjI3MDYsInN1YiI6ImQwZGY4Mjc0LWJhNWMtNGQ1ZC05YmZkLTUxZDg5OTJkYWI1YSJ9.F6juc9I1YHrye3mWjWyibmDjdeFtGSsJ69c4b_5hz5M
+
+# @name Appointments_List
+get {{baseUrl}}/appointments/ HTTP/1.1
+Authorization: Bearer {{tokenAuth}}
+
+###
+
+# @name Appointments_Create
+post {{baseUrl}}/appointments/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{tokenAuth}}
+
+{
+    "provider_id": "d0df8274-ba5c-4d5d-9bfd-51d8992dab5a",
+    "date": "{{$datetime iso8601}}"
+}
