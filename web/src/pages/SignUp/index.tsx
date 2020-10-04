@@ -11,7 +11,7 @@ import logoImg from "../../assets/logo.svg";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 
-import { Container, Content, AnimatedContainer, Background } from "./styles";
+import { Container, Content, AnimationContainer, Background } from "./styles";
 
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
@@ -39,7 +39,7 @@ const SignUp: React.FC = () => {
     <Container>
       <Background />
       <Content>
-        <AnimatedContainer>
+        <AnimationContainer>
           <img src={logoImg} alt="GoBarber" />
 
           <Form ref={formRef} onSubmit={handleSubmit}>
@@ -63,7 +63,7 @@ const SignUp: React.FC = () => {
             <FiArrowLeft />
             Voltar para login
           </Link>
-        </AnimatedContainer>
+        </AnimationContainer>
       </Content>
     </Container>
   );
