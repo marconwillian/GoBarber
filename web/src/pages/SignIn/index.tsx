@@ -1,10 +1,12 @@
+/* eslint-disable consistent-return */
 import React, { useRef, useCallback } from "react";
 import { FiLogIn, FiMail, FiLock } from "react-icons/fi";
 import { FormHandles } from "@unform/core";
 import { Form } from "@unform/web";
 import * as Yup from "yup";
 
-import { useAuth } from "../../hooks/AuthContext";
+import { useAuth } from "../../hooks/Auth";
+import { useToast } from "../../hooks/Toast";
 import getValidationErros from "../../utils/getValidationErros";
 
 import logoImg from "../../assets/logo.svg";
@@ -23,6 +25,7 @@ const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
 
   const { signIn } = useAuth();
+  const { addToast } = useToast();
 
   const handleSubmit = useCallback(
     async (data: SignInFormData) => {
@@ -39,19 +42,23 @@ const SignIn: React.FC = () => {
           abortEarly: false,
         });
 
-        signIn({
+        await signIn({
           email: data.email,
           password: data.password,
         });
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
-          formRef.current?.setErrors(getValidationErros(err));
+          return formRef.current?.setErrors(getValidationErros(err));
         }
 
-        // disparar um toast
+        addToast({
+          title: "Erro na autenticação",
+          description: "Ocorreu um erro ao fazer login, cheque as credenciais.",
+          type: "success",
+        });
       }
     },
-    [signIn]
+    [signIn, addToast]
   );
 
   return (
