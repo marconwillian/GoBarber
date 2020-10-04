@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import React, { useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { FiLogIn, FiMail, FiLock } from "react-icons/fi";
