@@ -3946,9 +3946,6 @@ color@^3.0.0:
   version "3.1.2"
   resolved "https://registry.npmjs.org/color/-/color-3.1.2.tgz#68148e7f85d41ad7649c5fa8c8106f098d229e10"
   integrity sha512-vXTJhHebByxZn3lDvDJYw4lR5+uB3vuoHsuYA5AKuxRVn5wzzIfQKGLBmgdVRHKTJYeK5rvJcHnrd0Li49CFpg==
-  dependencies:
-    color-convert "^1.9.1"
-    color-string "^1.5.2"
 
 colorette@^1.2.1:
   version "1.2.1"
@@ -9560,10 +9557,6 @@ postcss-normalize-unicode@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/postcss-normalize-unicode/-/postcss-normalize-unicode-4.0.1.tgz#841bd48fdcf3019ad4baa7493a3d363b52ae1cfb"
   integrity sha512-od18Uq2wCYn+vZ/qCOeutvHjB5jm57ToxRaMeNuf0nWVHaP9Hua56QyMF6fs/4FSUnVIw0CBPsU0K4LnBPwYwg==
-  dependencies:
-    browserslist "^4.0.0"
-    postcss "^7.0.0"
-    postcss-value-parser "^3.0.0"
 
 postcss-normalize-url@^4.0.1:
   version "4.0.1"
@@ -11571,10 +11564,6 @@ stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.npmjs.org/stylehacks/-/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
   integrity sha512-7GlLk9JwlElY4Y6a/rmbH2MhVlTyVmiJd1PfTCqFaIBEGMYNsrO/v3SeGTdhBThLg4Z+NbOk/qFMwCa+J+3p/g==
-  dependencies:
-    browserslist "^4.0.0"
-    postcss "^7.0.0"
-    postcss-selector-parser "^3.0.0"
 
 supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
@@ -12016,10 +12005,10 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@~3.7.2:
-  version "3.7.5"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
-  integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
+typescript@~3.9.10:
+  version "3.9.10"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
+  integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 unbox-primitive@^1.0.0:
   version "1.0.0"
